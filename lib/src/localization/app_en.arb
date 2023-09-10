@@ -1,0 +1,6 @@
+{
+  "appTitle": "fleddit",
+  "@appTitle": {
+    "description": "The title of the application"
+  }
+}

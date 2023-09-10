@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:fleddit/src/ui/splash.dart';
 import 'package:flutter/material.dart';
 
 import 'package:go_router/go_router.dart';
@@ -13,8 +14,8 @@ class ProjectRoute {
   static const registerScreen = ProjectRoute('/register');
   static const homeScreen = ProjectRoute('/home');
   static const subredditScreen = ProjectRoute('/r');
-  static const postScreen = ProjectRoute('/post');
-  static const createPostScreen = ProjectRoute('/create-post');
+  static const postScreen = ProjectRoute('post');
+  static const createPostScreen = ProjectRoute('create-post');
   static const createSubredditScreen = ProjectRoute('/create-subreddit');
   static const profileScreen = ProjectRoute('/profile');
   static const settingsScreen = ProjectRoute('/settings');
@@ -45,7 +46,7 @@ final routerProvider = Provider<GoRouter>(
         pageBuilder: (context, state) => buildPageWithoutTransition(
           context: context,
           state: state,
-          child: const Text('splashScreen'),
+          child: const SplashScreen(),
         ),
       ),
       GoRoute(

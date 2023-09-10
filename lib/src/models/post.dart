@@ -35,7 +35,7 @@ class Post {
         link: json['link'],
         video: json['video'],
         text: json['text'],
-        hideContent: json['hideContent'],
+        hideContent: json['hide_content'],
         id: id,
         upvotes: json['upvotes'],
         downvotes: json['downvotes'],

@@ -1,6 +1,5 @@
+import 'package:fleddit/src/app.dart';
 import 'package:flutter/material.dart';
-
-import 'src/app.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

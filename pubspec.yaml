@@ -7,14 +7,18 @@ environment:
   sdk: '>=3.1.0 <4.0.0'
 
 dependencies:
+  firebase_core: ^2.15.1
   flutter:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
+  flutter_dotenv: ^5.0.2
+
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  environment_config: ^3.1.0
   flutter_lints: ^2.0.0
   flutter_launcher_icons: ^0.13.1
   flutter_iconica_analysis:
@@ -27,4 +31,5 @@ flutter:
   generate: true
 
   assets:
+    - dotenv
     - assets/images/

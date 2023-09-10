@@ -1,0 +1,9 @@
+environment_config:
+  dotenv_path: dotenv
+  path: env_config.dart
+  fields:
+    FIREBASE_WEB_API_KEY:
+      dotenv: true
+      config_field: false
+      default: "key"
+  

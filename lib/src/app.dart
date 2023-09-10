@@ -1,4 +1,6 @@
 import 'package:fleddit/src/routes.dart';
+import 'package:fleddit/src/theme/dark_theme.dart';
+import 'package:fleddit/src/theme/light_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -24,8 +26,8 @@ class MyApp extends HookConsumerWidget {
         debugShowCheckedModeBanner: false,
         onGenerateTitle: (BuildContext context) =>
             AppLocalizations.of(context)!.appTitle,
-        theme: ThemeData(),
-        darkTheme: ThemeData.dark(),
+        theme: getLightTheme(),
+        darkTheme: getDarkTheme(),
         themeMode: ThemeMode.system,
         routerConfig: ref.watch(routerProvider),
       );

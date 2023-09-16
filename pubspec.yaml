@@ -4,23 +4,28 @@ description: A reddit showcase app built with flutter.
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.1.0 <4.0.0'
+  sdk: ">=3.1.0 <4.0.0"
 
 dependencies:
-  firebase_core: ^2.15.1
   flutter:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
+
+  # core
   flutter_dotenv: ^5.0.2
   flutter_hooks: ^0.20.1
   hooks_riverpod: ^2.4.0
   go_router: ^10.1.2
-  cloud_firestore: ^4.9.1
-  firebase_storage: ^11.2.6
   shared_preferences: ^2.2.1
-  firebase_auth: ^4.9.0
   intl: any
+
+  # firebase
+  cloud_firestore: ^4.9.1
+  firebase_analytics: ^10.4.5
+  firebase_auth: ^4.9.0
+  firebase_core: ^2.15.1
+  firebase_storage: ^11.2.6
 
 dev_dependencies:
   flutter_test:
